@@ -30,7 +30,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://onez3r0.github.io/images/redefine-og.webp">
 <meta property="article:published_time" content="2025-01-09T02:53:16.000Z">
-<meta property="article:modified_time" content="2025-01-09T03:22:01.916Z">
+<meta property="article:modified_time" content="2025-01-09T03:38:35.863Z">
 <meta property="article:author" content="OneZ3r0">
 <meta property="article:tag" content="php">
 <meta name="twitter:card" content="summary">
@@ -596,8 +596,8 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2025-01-09 11:22:01</span>
-            <span class="mobile">2025-01-09 11:22:01</span>
+            <span class="desktop">2025-01-09 11:38:35</span>
+            <span class="mobile">2025-01-09 11:38:35</span>
             <span class="hover-info">更新</span>
         </span>
     
@@ -651,21 +651,21 @@
 
 
 		<div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
-			<h1 id="POP链-php反序列化总结"><a href="#POP链-php反序列化总结" class="headerlink" title="POP链&amp;php反序列化总结"></a>POP链&amp;php反序列化总结</h1><h2 id="0x00-前言"><a href="#0x00-前言" class="headerlink" title="0x00 前言"></a>0x00 前言</h2><p>本地存的题目和知识总结太多太乱了，所以打算整理一下（垃圾）丢博客上，（借此机会复习一下，下次复查就不用本地乱翻了</p>
+			<h2 id="0x00-前言"><a href="#0x00-前言" class="headerlink" title="0x00 前言"></a>0x00 前言</h2><p>本地存的题目和知识总结太多太乱了，所以打算整理一下（垃圾）丢博客上，（借此机会复习一下，下次复查就不用本地乱翻了</p>
 <h2 id="0x01-基础概念-知识"><a href="#0x01-基础概念-知识" class="headerlink" title="0x01 基础概念&amp;知识"></a>0x01 基础概念&amp;知识</h2><p>POP：面向属性编程（Property-Oriented Programing）</p>
 <h3 id="魔术方法"><a href="#魔术方法" class="headerlink" title="魔术方法"></a>魔术方法</h3><blockquote>
 <ol>
-<li><code>__destruct()</code><br>  创建的对象在代码执行到最后一行会自动执行</li>
-<li><code>__construct()</code><br>  在new一个对象的时候会自动执行</li>
-<li><code>__wakeup()</code><br>  反序列化入口</li>
-<li><code>__invoke()</code><br>  被当作函数调用的时候</li>
-<li><code>__call(method, arg)</code><br>  当对象调用一个不存在的方法时执行</li>
-<li><code>__get()</code><br>  当对象的不可访问或者未定义属性被读取时调用</li>
-<li><code>__debugInfo()</code><br>  var_dump()的入口</li>
-<li><code>__clone()</code><br>  被clone执行的时候</li>
-<li><code>__sleep()</code><br>  被序列化时执行，返回序列化的结果</li>
-<li><code>__set()</code><br>   用来给类的实例的不存在的属性或不可访问的属性赋值</li>
-<li><code>__isset()</code><br>   对类的实例的某个私有属性执行isset()时执行</li>
+<li><code>__destruct()</code><br> 创建的对象在代码执行到最后一行会自动执行</li>
+<li><code>__construct()</code><br> 在new一个对象的时候会自动执行</li>
+<li><code>__wakeup()</code><br> 反序列化入口</li>
+<li><code>__invoke()</code><br> 被当作函数调用的时候</li>
+<li><code>__call(method, arg)</code><br> 当对象调用一个不存在的方法时执行</li>
+<li><code>__get()</code><br> 当对象的不可访问或者未定义属性被读取时调用</li>
+<li><code>__debugInfo()</code><br> var_dump()的入口</li>
+<li><code>__clone()</code><br> 被clone执行的时候</li>
+<li><code>__sleep()</code><br> 被序列化时执行，返回序列化的结果</li>
+<li><code>__set()</code><br>  用来给类的实例的不存在的属性或不可访问的属性赋值</li>
+<li><code>__isset()</code><br>  对类的实例的某个私有属性执行isset()时执行</li>
 </ol>
 </blockquote>
 <h3 id="对destruct-的理解"><a href="#对destruct-的理解" class="headerlink" title="对destruct()的理解"></a>对destruct()的理解</h3><blockquote>
@@ -760,7 +760,7 @@
         
             <li>
                 <strong>更新于
-                    :</strong> 2025-01-09 11:22:01
+                    :</strong> 2025-01-09 11:38:35
             </li>
         
         <li>
@@ -823,7 +823,7 @@
 	<div class="post-toc">
 		<div class="toc-title">目录</div>
 		<div class="page-title">POP链&amp;php反序列化总结</div>
-		<ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#POP%E9%93%BE-php%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E6%80%BB%E7%BB%93"><span class="nav-text">POP链&amp;php反序列化总结</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#0x00-%E5%89%8D%E8%A8%80"><span class="nav-text">0x00 前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0x01-%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5-%E7%9F%A5%E8%AF%86"><span class="nav-text">0x01 基础概念&amp;知识</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%AD%94%E6%9C%AF%E6%96%B9%E6%B3%95"><span class="nav-text">魔术方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AF%B9destruct-%E7%9A%84%E7%90%86%E8%A7%A3"><span class="nav-text">对destruct()的理解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B6%E4%BB%96%E8%AF%AD%E6%B3%95%E7%9F%A5%E8%AF%86"><span class="nav-text">其他语法知识</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0x02-%E4%B8%80%E4%BA%9B%E9%A2%98%E7%9B%AE"><span class="nav-text">0x02 一些题目</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#0xgame2024-Week1-ez-unser"><span class="nav-text">0xgame2024 [Week1] ez_unser</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SHCTF2024-Week1-poppopop"><span class="nav-text">SHCTF2024 [Week1] poppopop</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#BuildCTF2024-LovePopChain"><span class="nav-text">BuildCTF2024 LovePopChain</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#TSCTF-J2023-pophappy"><span class="nav-text">TSCTF-J2023 pophappy</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#TSCTF-J2024-1z-serialize"><span class="nav-text">TSCTF-J2024 1z-serialize</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Buildctf2024-Why-so-serials"><span class="nav-text">Buildctf2024 Why_so_serials?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2024%E6%9E%81%E5%AE%A2%E5%A4%A7%E6%8C%91%E6%88%98-ezpop"><span class="nav-text">2024极客大挑战 ezpop</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#NewStarctf2024-%E8%87%AD%E7%9A%AE%E5%90%B9%E6%B3%A1%E6%B3%A1"><span class="nav-text">NewStarctf2024 臭皮吹泡泡</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0x03-%E5%81%9A%E7%82%B9lab"><span class="nav-text">0x03 做点lab</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%AD%94%E6%9C%AF%E6%96%B9%E6%B3%95%E6%89%A7%E8%A1%8C%E7%9A%84%E5%85%88%E5%90%8E%E9%A1%BA%E5%BA%8F"><span class="nav-text">魔术方法执行的先后顺序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%A9%E7%94%A8%E6%95%B0%E7%BB%84%E6%89%A7%E8%A1%8C%E5%AF%B9%E8%B1%A1%E5%92%8C%E6%96%B9%E6%B3%95"><span class="nav-text">利用数组执行对象和方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E6%97%B6%E7%B1%BB%E9%87%8C%E9%9D%A2%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%AF%B9%E5%BA%94%E5%88%B0%E5%87%BD%E6%95%B0%EF%BC%9F"><span class="nav-text">反序列化时类里面字符串对应到函数？</span></a></li></ol></li></ol></li></ol>
+		<ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#0x00-%E5%89%8D%E8%A8%80"><span class="nav-text">0x00 前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0x01-%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5-%E7%9F%A5%E8%AF%86"><span class="nav-text">0x01 基础概念&amp;知识</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%AD%94%E6%9C%AF%E6%96%B9%E6%B3%95"><span class="nav-text">魔术方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AF%B9destruct-%E7%9A%84%E7%90%86%E8%A7%A3"><span class="nav-text">对destruct()的理解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B6%E4%BB%96%E8%AF%AD%E6%B3%95%E7%9F%A5%E8%AF%86"><span class="nav-text">其他语法知识</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0x02-%E4%B8%80%E4%BA%9B%E9%A2%98%E7%9B%AE"><span class="nav-text">0x02 一些题目</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#0xgame2024-Week1-ez-unser"><span class="nav-text">0xgame2024 [Week1] ez_unser</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SHCTF2024-Week1-poppopop"><span class="nav-text">SHCTF2024 [Week1] poppopop</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#BuildCTF2024-LovePopChain"><span class="nav-text">BuildCTF2024 LovePopChain</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#TSCTF-J2023-pophappy"><span class="nav-text">TSCTF-J2023 pophappy</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#TSCTF-J2024-1z-serialize"><span class="nav-text">TSCTF-J2024 1z-serialize</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Buildctf2024-Why-so-serials"><span class="nav-text">Buildctf2024 Why_so_serials?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2024%E6%9E%81%E5%AE%A2%E5%A4%A7%E6%8C%91%E6%88%98-ezpop"><span class="nav-text">2024极客大挑战 ezpop</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#NewStarctf2024-%E8%87%AD%E7%9A%AE%E5%90%B9%E6%B3%A1%E6%B3%A1"><span class="nav-text">NewStarctf2024 臭皮吹泡泡</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0x03-%E5%81%9A%E7%82%B9lab"><span class="nav-text">0x03 做点lab</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%AD%94%E6%9C%AF%E6%96%B9%E6%B3%95%E6%89%A7%E8%A1%8C%E7%9A%84%E5%85%88%E5%90%8E%E9%A1%BA%E5%BA%8F"><span class="nav-text">魔术方法执行的先后顺序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%A9%E7%94%A8%E6%95%B0%E7%BB%84%E6%89%A7%E8%A1%8C%E5%AF%B9%E8%B1%A1%E5%92%8C%E6%96%B9%E6%B3%95"><span class="nav-text">利用数组执行对象和方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E6%97%B6%E7%B1%BB%E9%87%8C%E9%9D%A2%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%AF%B9%E5%BA%94%E5%88%B0%E5%87%BD%E6%95%B0%EF%BC%9F"><span class="nav-text">反序列化时类里面字符串对应到函数？</span></a></li></ol></li></ol>
 
 	</div>
 </div>
